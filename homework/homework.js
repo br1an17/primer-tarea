@@ -19,7 +19,7 @@ function DecimalABinario(num) {
   var array = [];
   while (num > 0) {
     array.unshift(num % 2);
-    num = Math.trunc(num / 2)
+    num = Math.floor(num / 2)
   }
     return array.join('');
   }
